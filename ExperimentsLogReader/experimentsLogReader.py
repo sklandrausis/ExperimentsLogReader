@@ -7,14 +7,13 @@ import time
 import datetime
 import argparse
 import platform
-import configparser
 import json
 
-from scan import Scan
-from parsers._configparser import ConfigParser
-    
+import ExperimentsLogReader.parsers._configparser as cparser
+import ExperimentsLogReader.scan as scan
+   
 def parseArguments():
-    parser = argparse.ArgumentParser(description='''Reads log file and create pretty logs. ''', epilog="""LOGGREADER.""")
+    parser = argparse.ArgumentParser(description='Reads log file and create pretty logs. ', epilog="""LOGGREADER.""")
     parser.add_argument("logFile", help="Experiment log file name", type=str)
     parser.add_argument("-c", "--config", help="Configuration cfg file", type=str, default="config/config.cfg")
     parser.add_argument("-s", "--source", help="Source name", type=str, default="")
@@ -22,7 +21,7 @@ def parseArguments():
     args = parser.parse_args()
 
     return args
-        
+    
 class ExperimentLogReader():
     def __init__(self, logs, prettyLogs, coordinates=None, sourceName=None):
         self.logs = logs
@@ -57,7 +56,7 @@ class ExperimentLogReader():
         self.sourceName = sourceName
         self.date_list = list()
         
-        if len(self.coordinates) != 0:
+        if self.coordinates:
             self.single = True
         else:
             self.single = False
@@ -138,13 +137,13 @@ class ExperimentLogReader():
                         elif len(line) != 0 and append==False:
                             self.headerLines.append(line)
                         
-            header = Scan(self.headerLines)
+            header = scan.Scan(self.headerLines)
             header.getParametrs()
             self.header_date, self.header_source, self.header_sourceName, self.header_epoch, self.header_ra, self.header_dec, self.header_timeStart, self.header_timeStop, self.header_SystemtemperaturesForScan, self.header_freqBBC1, self.header_freqBBC2, self.header_loa, self.header_loc, self.header_clock, self.header_fs_frequency, self.header_elevation = header.returnParametrs()
             
             #print header_source, header_sourceName, header_epoch, header_ra, header_dec
             for scan in self.scanLines:
-                scanData = Scan(self.scanLines[scan])
+                scanData = scan.Scan(self.scanLines[scan])
                 self.scanList.append(scanData)
                 scanData.setScanNumber(scan)
                 scanData.getParametrs()
@@ -345,7 +344,7 @@ def main():
     configFilePath = str(args.__dict__["config"])
     singleSourceExperiment = str(args.__dict__["source"])
     
-    config = ConfigParser.getInstance()
+    config = cparser.ConfigParser.getInstance()
     config.CreateConfig(configFilePath)
     logPath = config.getConfig("paths", "logPath")
     prettyLogsPath = config.getConfig("paths", "logPath")
@@ -359,7 +358,7 @@ def main():
     experimentLogReader.writeOutput()
     
     sys.exit(0)
-    
+
 if __name__=="__main__":
     main()
     

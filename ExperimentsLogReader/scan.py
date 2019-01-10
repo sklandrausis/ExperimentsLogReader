@@ -1,4 +1,6 @@
+#! /usr/bin/python3
 # -*- coding: utf-8 -*-
+
 import tkinter
 from tkinter import simpledialog
 from decimal import Decimal

@@ -102,3 +102,19 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+LICENSE
+.project
+.pydevproject
+.settings/
+V_tot.dat
+config/
+dataFiles/
+docker/
+logs/
+lsrShift.dat
+output/
+parsers/
+prettyLogs/
+results/
+viraclogo.png
+

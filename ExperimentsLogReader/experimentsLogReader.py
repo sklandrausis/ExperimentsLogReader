@@ -10,7 +10,7 @@ import platform
 import json
 
 import ExperimentsLogReader.parsers._configparser as cparser
-import ExperimentsLogReader.scan as scan
+import ExperimentsLogReader.scan as s
    
 def parseArguments():
     parser = argparse.ArgumentParser(description='Reads log file and create pretty logs. ', epilog="""LOGGREADER.""")
@@ -137,13 +137,13 @@ class ExperimentLogReader():
                         elif len(line) != 0 and append==False:
                             self.headerLines.append(line)
                         
-            header = scan.Scan(self.headerLines)
+            header = s.Scan(self.headerLines)
             header.getParametrs()
             self.header_date, self.header_source, self.header_sourceName, self.header_epoch, self.header_ra, self.header_dec, self.header_timeStart, self.header_timeStop, self.header_SystemtemperaturesForScan, self.header_freqBBC1, self.header_freqBBC2, self.header_loa, self.header_loc, self.header_clock, self.header_fs_frequency, self.header_elevation = header.returnParametrs()
             
             #print header_source, header_sourceName, header_epoch, header_ra, header_dec
             for scan in self.scanLines:
-                scanData = scan.Scan(self.scanLines[scan])
+                scanData = s.Scan(self.scanLines[scan])
                 self.scanList.append(scanData)
                 scanData.setScanNumber(scan)
                 scanData.getParametrs()

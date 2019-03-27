@@ -2,19 +2,21 @@
 # -*- coding: utf-8 -*-
 
 import os
-import sys
 from enum import Enum, unique
 import json
 import pprint
 import datetime
+import time
 
-import parsers._configparser as cparser
-import scan as s
+import ExperimentsLogReader.scan as s
 
 @unique
 class LogTypes(Enum):
     DBBC = 1
     SDR = 2
+
+os.environ['TZ'] = 'UTC'
+time.tzset()
 
 class ExperimentLogReader(object):
     __slots__ = ('logFile', 'outputPath', 'output', 'logLines')
@@ -310,13 +312,3 @@ class LogReaderFactory:
         else:
             return DBBClogReader(logFile, outputPath, coordinates, sourceName)
 
-logFile = "/home/janis/PycharmProjects/LogReader/ExperimentsLogReader/exampleLogfiles/fs_example.log"
-outputPath = "/home/janis/PycharmProjects/LogReader/ExperimentsLogReader/exampleOutputfiles/fs_example"
-logs = LogReaderFactory.getLgReader(LogTypes.DBBC,logFile, outputPath, [], True)
-logs.printLogs()
-
-
-logFile = "/home/janis/PycharmProjects/LogReader/ExperimentsLogReader/exampleLogfiles/SDRtest.log"
-outputPath = "/home/janis/PycharmProjects/LogReader/ExperimentsLogReader/exampleOutputfiles/SDRtest"
-logs = LogReaderFactory.getLgReader(LogTypes.SDR,logFile, outputPath)
-logs.printLogs()

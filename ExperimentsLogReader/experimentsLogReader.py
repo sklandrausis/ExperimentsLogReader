@@ -253,7 +253,8 @@ class DBBClogReader(ExperimentLogReader):
                 self.FreqStart.append(float(self.FreqBBC1s[f]) + float(self.loas[f]))
                 self.FreqStop.append(float(self.FreqBBC2s[f]) + float(self.locs[f]))
         self.__createLogs()
-
+        self.writeOutput()
+        
     def __createLogs(self):
         message = ""
 

@@ -1,0 +1,502 @@
+{
+ "header": {
+  "location": "IRBENE16",
+  "Systemtemperature": [
+   "25.1",
+   "26.8"
+  ],
+  "Ra": [],
+  "Dec": [],
+  "dates": "16 Mar 2019",
+  "startTime": "None",
+  "LO": 6000.0,
+  "BBC": "667.68",
+  "FreqStart": 6667.68,
+  "sourceName": "None",
+  "source": "None",
+  "stopTime": "None",
+  "clockOffset": 0.0,
+  "fs_frequencyfs": "0.0",
+  "message": ""
+ },
+ "1s0": {
+  "Systemtemperature": [
+   "25.1",
+   "26.8"
+  ],
+  "Ra": [
+   "22",
+   "56",
+   "17.90"
+  ],
+  "Dec": [
+   "62",
+   "01",
+   "49.7"
+  ],
+  "dates": "16 Mar 2019",
+  "startTime": "14:36:10",
+  "FreqStart": 6667.68,
+  "sourceName": "cepa",
+  "stopTime": "14:36:35",
+  "clockOffset": "-0.000023069",
+  "fs_frequencyfs": "5999.5",
+  "elevation": "55.960021"
+ },
+ "1r0": {
+  "Systemtemperature": [
+   0,
+   0
+  ],
+  "Ra": [
+   "22",
+   "56",
+   "17.90"
+  ],
+  "Dec": [
+   "62",
+   "01",
+   "49.7"
+  ],
+  "dates": "16 Mar 2019",
+  "startTime": "14:36:43",
+  "FreqStart": 6667.68,
+  "sourceName": "cepa",
+  "stopTime": "14:37:08",
+  "clockOffset": "-0.000023068",
+  "fs_frequencyfs": "6000.5",
+  "elevation": "55.905346"
+ },
+ "2s0": {
+  "Systemtemperature": [
+   "25.2",
+   "26.5"
+  ],
+  "Ra": [
+   "22",
+   "56",
+   "17.90"
+  ],
+  "Dec": [
+   "62",
+   "01",
+   "49.7"
+  ],
+  "dates": "16 Mar 2019",
+  "startTime": "14:37:30",
+  "FreqStart": 6667.68,
+  "sourceName": "cepa",
+  "stopTime": "14:37:55",
+  "clockOffset": "-0.000023070",
+  "fs_frequencyfs": "5999.5",
+  "elevation": "55.818131"
+ },
+ "2r0": {
+  "Systemtemperature": [
+   0,
+   0
+  ],
+  "Ra": [
+   "22",
+   "56",
+   "17.90"
+  ],
+  "Dec": [
+   "62",
+   "01",
+   "49.7"
+  ],
+  "dates": "16 Mar 2019",
+  "startTime": "14:38:02",
+  "FreqStart": 6667.68,
+  "sourceName": "cepa",
+  "stopTime": "14:38:27",
+  "clockOffset": "-0.000023066",
+  "fs_frequencyfs": "6000.5",
+  "elevation": "55.760284"
+ },
+ "3s0": {
+  "Systemtemperature": [
+   "25.2",
+   "27.0"
+  ],
+  "Ra": [
+   "22",
+   "56",
+   "17.90"
+  ],
+  "Dec": [
+   "62",
+   "01",
+   "49.7"
+  ],
+  "dates": "16 Mar 2019",
+  "startTime": "14:38:49",
+  "FreqStart": 6667.68,
+  "sourceName": "cepa",
+  "stopTime": "14:39:14",
+  "clockOffset": "-0.000023074",
+  "fs_frequencyfs": "5999.5",
+  "elevation": "55.677812"
+ },
+ "3r0": {
+  "Systemtemperature": [
+   0,
+   0
+  ],
+  "Ra": [
+   "22",
+   "56",
+   "17.90"
+  ],
+  "Dec": [
+   "62",
+   "01",
+   "49.7"
+  ],
+  "dates": "16 Mar 2019",
+  "startTime": "14:39:22",
+  "FreqStart": 6667.68,
+  "sourceName": "cepa",
+  "stopTime": "14:39:47",
+  "clockOffset": "-0.000023066",
+  "fs_frequencyfs": "6000.5",
+  "elevation": "55.620060"
+ },
+ "4s0": {
+  "Systemtemperature": [
+   "24.9",
+   "26.5"
+  ],
+  "Ra": [
+   "22",
+   "56",
+   "17.90"
+  ],
+  "Dec": [
+   "62",
+   "01",
+   "49.7"
+  ],
+  "dates": "16 Mar 2019",
+  "startTime": "14:40:09",
+  "FreqStart": 6667.68,
+  "sourceName": "cepa",
+  "stopTime": "14:40:34",
+  "clockOffset": "-0.000023069",
+  "fs_frequencyfs": "5999.5",
+  "elevation": "55.537371"
+ },
+ "4r0": {
+  "Systemtemperature": [
+   0,
+   0
+  ],
+  "Ra": [
+   "22",
+   "56",
+   "17.90"
+  ],
+  "Dec": [
+   "62",
+   "01",
+   "49.7"
+  ],
+  "dates": "16 Mar 2019",
+  "startTime": "14:40:42",
+  "FreqStart": 6667.68,
+  "sourceName": "cepa",
+  "stopTime": "14:41:07",
+  "clockOffset": "-0.000023073",
+  "fs_frequencyfs": "6000.5",
+  "elevation": "55.479711"
+ },
+ "5s0": {
+  "Systemtemperature": [
+   "25.0",
+   "26.7"
+  ],
+  "Ra": [
+   "22",
+   "56",
+   "17.90"
+  ],
+  "Dec": [
+   "62",
+   "01",
+   "49.7"
+  ],
+  "dates": "16 Mar 2019",
+  "startTime": "14:41:29",
+  "FreqStart": 6667.68,
+  "sourceName": "cepa",
+  "stopTime": "14:41:54",
+  "clockOffset": "-0.000023067",
+  "fs_frequencyfs": "5999.5",
+  "elevation": "55.397509"
+ },
+ "5r0": {
+  "Systemtemperature": [
+   0,
+   0
+  ],
+  "Ra": [
+   "22",
+   "56",
+   "17.90"
+  ],
+  "Dec": [
+   "62",
+   "01",
+   "49.7"
+  ],
+  "dates": "16 Mar 2019",
+  "startTime": "14:42:01",
+  "FreqStart": 6667.68,
+  "sourceName": "cepa",
+  "stopTime": "14:42:26",
+  "clockOffset": "-0.000023072",
+  "fs_frequencyfs": "6000.5",
+  "elevation": "55.339945"
+ },
+ "6s0": {
+  "Systemtemperature": [
+   "24.9",
+   "26.4"
+  ],
+  "Ra": [
+   "22",
+   "56",
+   "17.90"
+  ],
+  "Dec": [
+   "62",
+   "01",
+   "49.7"
+  ],
+  "dates": "16 Mar 2019",
+  "startTime": "14:42:48",
+  "FreqStart": 6667.68,
+  "sourceName": "cepa",
+  "stopTime": "14:43:13",
+  "clockOffset": "-0.000023071",
+  "fs_frequencyfs": "5999.5",
+  "elevation": "55.257879"
+ },
+ "6r0": {
+  "Systemtemperature": [
+   0,
+   0
+  ],
+  "Ra": [
+   "22",
+   "56",
+   "17.90"
+  ],
+  "Dec": [
+   "62",
+   "01",
+   "49.7"
+  ],
+  "dates": "16 Mar 2019",
+  "startTime": "14:43:21",
+  "FreqStart": 6667.68,
+  "sourceName": "cepa",
+  "stopTime": "14:43:46",
+  "clockOffset": "-0.000023076",
+  "fs_frequencyfs": "6000.5",
+  "elevation": "55.200410"
+ },
+ "7s0": {
+  "Systemtemperature": [
+   "25.7",
+   "26.8"
+  ],
+  "Ra": [
+   "22",
+   "56",
+   "17.90"
+  ],
+  "Dec": [
+   "62",
+   "01",
+   "49.7"
+  ],
+  "dates": "16 Mar 2019",
+  "startTime": "14:44:08",
+  "FreqStart": 6667.68,
+  "sourceName": "cepa",
+  "stopTime": "14:44:33",
+  "clockOffset": "-0.000023066",
+  "fs_frequencyfs": "5999.5",
+  "elevation": "55.118131"
+ },
+ "7r0": {
+  "Systemtemperature": [
+   0,
+   0
+  ],
+  "Ra": [
+   "22",
+   "56",
+   "17.90"
+  ],
+  "Dec": [
+   "62",
+   "01",
+   "49.7"
+  ],
+  "dates": "16 Mar 2019",
+  "startTime": "14:44:41",
+  "FreqStart": 6667.68,
+  "sourceName": "cepa",
+  "stopTime": "14:45:06",
+  "clockOffset": "-0.000023073",
+  "fs_frequencyfs": "6000.5",
+  "elevation": "55.060758"
+ },
+ "8s0": {
+  "Systemtemperature": [
+   "28.0",
+   "29.2"
+  ],
+  "Ra": [
+   "22",
+   "56",
+   "17.90"
+  ],
+  "Dec": [
+   "62",
+   "01",
+   "49.7"
+  ],
+  "dates": "16 Mar 2019",
+  "startTime": "14:45:28",
+  "FreqStart": 6667.68,
+  "sourceName": "cepa",
+  "stopTime": "14:45:53",
+  "clockOffset": "-0.000023072",
+  "fs_frequencyfs": "5999.5",
+  "elevation": "54.978616"
+ },
+ "8r0": {
+  "Systemtemperature": [
+   0,
+   0
+  ],
+  "Ra": [
+   "22",
+   "56",
+   "17.90"
+  ],
+  "Dec": [
+   "62",
+   "01",
+   "49.7"
+  ],
+  "dates": "16 Mar 2019",
+  "startTime": "14:46:00",
+  "FreqStart": 6667.68,
+  "sourceName": "cepa",
+  "stopTime": "14:46:26",
+  "clockOffset": "-0.000023066",
+  "fs_frequencyfs": "6000.5",
+  "elevation": "54.921341"
+ },
+ "9s0": {
+  "Systemtemperature": [
+   "31.4",
+   "31.4"
+  ],
+  "Ra": [
+   "22",
+   "56",
+   "17.90"
+  ],
+  "Dec": [
+   "62",
+   "01",
+   "49.7"
+  ],
+  "dates": "16 Mar 2019",
+  "startTime": "14:46:47",
+  "FreqStart": 6667.68,
+  "sourceName": "cepa",
+  "stopTime": "14:47:12",
+  "clockOffset": "-0.000023072",
+  "fs_frequencyfs": "5999.5",
+  "elevation": "54.839687"
+ },
+ "9r0": {
+  "Systemtemperature": [
+   0,
+   0
+  ],
+  "Ra": [
+   "22",
+   "56",
+   "17.90"
+  ],
+  "Dec": [
+   "62",
+   "01",
+   "49.7"
+  ],
+  "dates": "16 Mar 2019",
+  "startTime": "14:47:20",
+  "FreqStart": 6667.68,
+  "sourceName": "cepa",
+  "stopTime": "14:47:45",
+  "clockOffset": "-0.000023072",
+  "fs_frequencyfs": "6000.5",
+  "elevation": "54.782508"
+ },
+ "10s0": {
+  "Systemtemperature": [
+   "33.7",
+   "35.9"
+  ],
+  "Ra": [
+   "22",
+   "56",
+   "17.90"
+  ],
+  "Dec": [
+   "62",
+   "01",
+   "49.7"
+  ],
+  "dates": "16 Mar 2019",
+  "startTime": "14:48:07",
+  "FreqStart": 6667.68,
+  "sourceName": "cepa",
+  "stopTime": "14:48:32",
+  "clockOffset": "-0.000023075",
+  "fs_frequencyfs": "5999.5",
+  "elevation": "54.700994"
+ },
+ "10r0": {
+  "Systemtemperature": [
+   0,
+   0
+  ],
+  "Ra": [
+   "22",
+   "56",
+   "17.90"
+  ],
+  "Dec": [
+   "62",
+   "01",
+   "49.7"
+  ],
+  "dates": "16 Mar 2019",
+  "startTime": "14:48:40",
+  "FreqStart": 6667.68,
+  "sourceName": "cepa",
+  "stopTime": "14:49:05",
+  "clockOffset": "-0.000023065",
+  "fs_frequencyfs": "6000.5",
+  "elevation": "54.643913"
+ }
+}

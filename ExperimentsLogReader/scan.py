@@ -77,10 +77,10 @@ class Scan():
                 self.date = str(day).zfill(2) + " " + month + " " + str(year)
                 
             elif "disk_record=of" in line:
-                self.timeStop =  line.split(".")[2]
+                self.timeStop = line.split(".")[2]
                 
             elif "/tsys/1u" in line:
-                    t  = line.split("/")[2].split(",")[1]
+                    t = line.split("/")[2].split(",")[1]
                     try:
                         float(t)
                     except:
@@ -106,7 +106,7 @@ class Scan():
                             t = 0
                             
                     self.SystemtemperaturesForScan[0] = t
-                    
+
             elif "/tsys/9u" in line:
                     t  = line.split("/")[2].split(",")[1]
                     try:

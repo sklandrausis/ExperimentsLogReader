@@ -78,12 +78,13 @@ class SDRlogReader(ExperimentLogReader):
 
     def parseBody(self):
         for line in self.getBody():
-            key = line.split(" ")[1].strip() + line.split(" ")[2].strip()
-            date = line.split(" ")[0].strip()
-            AzEl = [line.split(" ")[3].strip(), line.split(" ")[4].strip()]
-            self.output[key] = dict()
-            self.output[key]["date"] = date
-            self.output[key]["AzEl"] = AzEl
+            if not "rxc" in line and not "wx" in line:
+                key = line.split(" ")[1].strip() + line.split(" ")[2].strip()
+                date = line.split(" ")[0].strip()
+                AzEl = [line.split(" ")[3].strip(), line.split(" ")[4].strip()]
+                self.output[key] = dict()
+                self.output[key]["date"] = date
+                self.output[key]["AzEl"] = AzEl
 
 class DBBClogReader(ExperimentLogReader):
     def __init__(self, logFile, outputPath, coordinates=None, sourceName=None):
@@ -190,6 +191,7 @@ class DBBClogReader(ExperimentLogReader):
                 dec = list()
                 Ra = self.coordinates[0]
                 Dec = self.coordinates[1]
+                print(Dec)
                 epoch = self.coordinates[2]
 
                 ra.append(Ra[0:2])

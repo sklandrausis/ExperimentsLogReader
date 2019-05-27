@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
      name='experimentsLogReader',  
-     version='2.1.1',
+     version='2.2.1',
      author="Jānis Šteinbergs",
      author_email="janis.akmenskalns@gmail.com",
      description="Log file reader for Radio Astronomy",

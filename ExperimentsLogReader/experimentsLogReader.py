@@ -79,7 +79,7 @@ class SDRlogReader(ExperimentLogReader):
     def parseBody(self):
         for line in self.getBody():
             if len(line) > 2:
-                if not "rxc" in line and not "wx" in line:
+                if not "rxc" in line and not "wx" in line and not "rxl" in line:
                     key = line.split(" ")[1].strip() + line.split(" ")[2].strip()
                     date = line.split(" ")[0].strip()
                     AzEl = [line.split(" ")[3].strip(), line.split(" ")[4].strip()]

@@ -11,7 +11,7 @@ setuptools.setup(
      description="Log file reader for Radio Astronomy",
      long_description=long_description,
      keywords=['VIRAC'],
-   long_description_content_type="text/markdown",
+     long_description_content_type="text/markdown",
      url="https://github.com/sklandrausis/ExperimentsLogReader",
      packages=setuptools.find_packages(),
      classifiers=[
@@ -19,4 +19,7 @@ setuptools.setup(
          "License :: OSI Approved :: MIT License",
          "Operating System :: OS Independent",
      ],
+     install_requires=[
+        "configparser"
+      ]
  )

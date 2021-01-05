@@ -6,7 +6,8 @@ from tkinter import simpledialog
 from decimal import Decimal
 import datetime
 
-class Scan():
+
+class Scan:
     def __init__(self, logLines):
         self.logLine = logLines
         
